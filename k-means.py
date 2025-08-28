@@ -56,7 +56,7 @@ target_mse = 1  # Try changing this
 found = False
 
 # Loop over K until desired error is achieved
-for K in range(4, 129, 4):  # Try K = 4, 8, ..., 64
+for K in range(4, 129, 4):  # Try K = 4, 8, ..., 128
     kmeans = KMeans(n_clusters=K, random_state=42)
     kmeans.fit(pixels)
     labels = kmeans.predict(pixels)
